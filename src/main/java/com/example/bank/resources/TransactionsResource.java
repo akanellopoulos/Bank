@@ -28,7 +28,7 @@ public class TransactionsResource {
     }
 
     @GET
-    @Path("/{beneficiaryId}/balance")
+    @Path("/{beneficiaryId}/balances")
     @Produces("application/json")
     public Response findBalanceByBeneficiaryId(@PathParam("beneficiaryId") Long beneficiaryId) {
         BalanceDTO balance = transactionsService.findBalanceByBeneficiaryId(beneficiaryId);
