@@ -47,7 +47,6 @@ public class TransactionsRepository {
                 map(Map.Entry::getValue).
                 flatMap(Set::stream).
                 collect(Collectors.toSet());
-//        return accountIds.stream().map(accountId -> transactionsions.get(accountId)).collect(Collectors.toSet());
     }
 
 
